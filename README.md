@@ -11,7 +11,7 @@ Using this code for actual phishing attacks is illegal, unethical, violates priv
 1. Ensure Docker and Docker Compose are installed
 2. Run: `docker-compose up -d`
 3. Access the phishing page: http://localhost
-4. View collected data: http://localhost:8080
+4. View collected data: http://localhost:8080 (user: phishuser, password: DeNeSpart123)
 
 ## Viewing Collected Data
 
@@ -31,6 +31,15 @@ SELECT * FROM credentials;
 docker-compose down       # Stop containers
 docker-compose down -v    # Remove all data
 ```
+
+### Google Login Page Simulation
+![Google Login Simulation](screenshots/login-page-simulation.png)
+
+### Data Collection View via phpMyAdmin
+![Data Collection in phpMyAdmin](screenshots/phpmyadmin-data-view.png)
+
+### Phishing email example
+![Phishing email](screenshots/phishing-email.png)
 
 ## Educational Notes
 
