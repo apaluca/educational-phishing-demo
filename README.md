@@ -9,7 +9,7 @@ Using this code for actual phishing attacks is illegal, unethical, violates priv
 ## Setup Instructions
 
 1. Ensure Docker and Docker Compose are installed
-2. Run: `docker-compose up -d`
+2. Run: `docker compose up -d`
 3. Access the phishing page: http://localhost
 4. View collected data: http://localhost:8080 (user: phishuser, password: DeNeSpart123)
 
